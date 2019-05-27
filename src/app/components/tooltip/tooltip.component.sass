@@ -1,0 +1,31 @@
+.tooltip
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+
+  span
+    background: #000000ba;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    white-space: nowrap;
+    bottom: 100%;
+ 
+.tooltip-visible
+  visibility: visible;
+
+.tooltip-on-bottom
+  span
+    top: 100%;
+    bottom: auto;
+
+    @media screen and (max-width: 768px)
+      top: 50%;
+    
+  

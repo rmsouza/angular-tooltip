@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color: #673ab7
+$primary-text-color: #ffffff
+$secondary-color: #ffc107
+$secondary-text-color: #3c3c3c
+
+*
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+body
+  font-family: Geneva, Verdana, sans-serif;
+
+p
+  margin: 20px 0px;
+
+button
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin: 5px;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px)
+    width: 100%;
+
+.primary-color
+  background: $primary-color;
+  color: $primary-text-color;
+
+.secondary-color
+  background: $secondary-color;
+  color: $secondary-text-color;
+
+.container
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+
+  .box
+    width: 50vw;
+
+    @media screen and (max-width: 768px)
+      width: 100vw;
+
+  .buttons
+    position: relative;
+    margin: 0 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 768px)
+      margin: 0;
+      flex-direction: column;
+
+app-button
+  @media screen and (max-width: 768px)
+    width: 100%;
